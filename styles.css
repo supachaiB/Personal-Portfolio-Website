@@ -5,20 +5,37 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   background: #f4f4f4;
   color: #333;
+  scroll-behavior: smooth;
+
 }
 
 .container {
   max-width: 1200px;  /* ความกว้างสูงสุดของเนื้อหา */
   margin: 0 auto;     /* จัดให้ container อยู่กลางหน้าจอ (แนวนอน) */
+}
+
+#scrollToTopBtn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#scrollToTopBtn:hover{
+  background-color: #555;
 }
 
 /* Header & Nav */
