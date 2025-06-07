@@ -17,7 +17,7 @@ scrollTotop.addEventListener("click",function(){
 });
 
 const navigation =
-  document.querySelector("primary-navigation");
+  document.querySelector(".primary-navigation");
 
 const navigationHeight =
   navigation.offsetHeight;
