@@ -5,12 +5,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 
+    var(--scroll-padding, 5rem);
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   background: #f4f4f4;
   color: #333;
-  scroll-behavior: smooth;
 
 }
 
@@ -45,33 +50,33 @@ header {
   padding: 1rem 0;
 }
 
-nav {
+.nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-nav h1 {
+.nav-wrapper h1 {
   font-size: 1.5rem;
 }
 
-nav ul {
+.nav-wrapper ul {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
 
-nav ul li a {
+.nav-wrapper ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-wrapper ul li a:hover {
   color: #ffd700;
 }
 
